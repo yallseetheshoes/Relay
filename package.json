@@ -1,0 +1,16 @@
+{
+  "name": "relay",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "yallseetheshoes",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "42.2.0"
+  }
+}
