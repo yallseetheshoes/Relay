@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="color-scheme" content="dark">
     <title>Authentication</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-
-
-
+    <p id="mainText">Relay</p>
+    <form>
+        <input id="username" minlength="5" maxlength="25" type="text" placeholder="Username" required>
+        <input id="password" minlength="5" maxlength="25" type="password" placeholder="Password" required>
+        <div>
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+        </div>
+    </form>
+    <p id="statCode"></p>
     <script src="./renderer.js"></script>
 </body>
 </html>

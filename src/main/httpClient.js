@@ -7,7 +7,7 @@ async function webRequest(method, url, body = null) {
     const text = await res.text();
 
     if (!res.ok) {
-        throw new Error(`HTTP error ${res.status}: ${text}`);
+        throw new Error(String(res.status));
     }
 
     return text ? JSON.parse(text) : null;

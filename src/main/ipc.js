@@ -16,8 +16,7 @@ electron.ipcMain.handle("auth:login", async (event,data) => {
         }
         return "TOKEN MISSING";
     } catch (error) {
-        console.log(error);
-        return "ERROR";
+        return error.message;
     }
 });
 electron.ipcMain.handle("auth:register", async (event,data) => {
@@ -27,7 +26,6 @@ electron.ipcMain.handle("auth:register", async (event,data) => {
         console.log(result);
         return true;
     } catch (error) {
-        console.log(error);
         return error.message;
     }
 });
